@@ -150,8 +150,6 @@ function agregarPlatillo(producto) {
     } else {
         mensajePedidoVacio();
     }
-
-    
 }
 
 function actualizarResumen() {
@@ -254,7 +252,6 @@ function actualizarResumen() {
         
         //Agregar lista al grupo principal
         grupo.appendChild(lista);
-
     });
     
     resumen.appendChild(heading);
@@ -299,7 +296,6 @@ function eliminarProducto(id) {
     const productoEliminado = `#producto-${id}`;
     const inputEliminado = document.querySelector(productoEliminado);
     inputEliminado.value = 0;
-
 }
 
 function mensajePedidoVacio() {
@@ -384,12 +380,8 @@ function formularioPropinas() {
     divFormulario.appendChild(radio25Div);
     divFormulario.appendChild(radio50Div);
 
-
-    
     // Agregar al formulario
     formulario.appendChild(divFormulario);
-    
-
     contenido.appendChild(formulario);
 }
 
@@ -458,7 +450,6 @@ function mostrarTotalHTML(subtotal, total, propina) {
     if(totalPagarDIV) {
         totalPagarDIV.remove();
     }
-
 
     divTotales.appendChild(subtotalParrafo);
     divTotales.appendChild(propinaParrafo);
